@@ -145,7 +145,64 @@
     </p>
 
 
-    
+    <section class="next-section" id="pentagon">
+    	<div class="container-fluid pt-3">
+    		<div class="row">
+  		  	<div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-3 offset-lg-1">
+  		  		<h3 class="text-center">Pentagon</h3>
+  		  		<hr>
+  		  		<p class="text-center">Click in the pentagon to start</p>
+
+  		  		<div class="form-group row">
+  				    <label for="epochs-number-input" class="col-2 col-form-label">Epochs</label>
+    					<div class="col-8 offset-1">
+    					  <input class="form-control" type="number" value="1000" id="js-input-pentagon-epochs">
+    					</div>
+    				</div>
+
+  				<table class="table table-bordered">
+  				  <thead>
+  				    <tr class="table-active">
+  				      <th class="text-center">X</th>
+  				      <th class="text-center">Y</th>
+  				    </tr>
+  				  </thead>
+  				  <tbody>
+  				    <tr>
+  				      <td><input id="js-input-pentagon-x0" class="form-control" type="number" value="200" min="0" max="800" step="1"></td>
+  				      <td><input id="js-input-pentagon-y0" class="form-control" type="number" value="225" min="0" max="600" step="1"></td>
+  				    </tr>
+  				    <tr>
+  				      <td><input id="js-input-pentagon-x1" class="form-control" type="number" value="300" min="0" max="800" step="1"></td>
+  				      <td><input id="js-input-pentagon-y1" class="form-control" type="number" value="400" min="0" max="600" step="1"></td>
+  				    </tr>
+  				    <tr>
+  				      <td><input id="js-input-pentagon-x2" class="form-control" type="number" value="500" min="0" max="800" step="1"></td>
+  				      <td><input id="js-input-pentagon-y2" class="form-control" type="number" value="400" min="0" max="600" step="1"></td>
+  				    </tr>
+  				    <tr>
+  				      <td><input id="js-input-pentagon-x3" class="form-control" type="number" value="600" min="0" max="800" step="1"></td>
+  				      <td><input id="js-input-pentagon-y3" class="form-control" type="number" value="225" min="0" max="600" step="1"></td>
+  				    </tr>
+  				    <tr>
+  				      <td><input id="js-input-pentagon-x4" class="form-control" type="number" value="400" min="0" max="800" step="1"></td>
+  				      <td><input id="js-input-pentagon-y4" class="form-control" type="number" value="100" min="0" max="600" step="1"></td>
+  				    </tr>
+  				  </tbody>
+  				</table>
+          <p class="text-center">
+            <button id="js-btn-drawPentagon" type="button" class="btn btn-primary" style="margin-bottom: 1.5em">Draw</button>
+          </p>
+
+  		  </div> <!-- END col-->
+
+  		  	<div class="col-lg-7">
+      			<canvas class="canvas-border" id="js-canvas-pentagon" width="800" height="600" style="display: block; margin: 0 auto; border:1px solid #000000"></canvas>
+  		  	</div> <!-- END col-8 -->
+
+  	  	</div> <!-- END Row -->
+  	 </div><!-- END Container -->
+    </section>
 
 
     <footer class="text-center">
