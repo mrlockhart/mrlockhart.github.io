@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Chaos Game 2D</title>
+
+    <link rel=”shortcut icon” href="images/Sierpinski_triangle-32x32" type=”image/png”>
+    <link rel=”icon” href=”images/Sierpinski_triangle-32x32” type=”image/png”>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+  <h1 style="text-align:centered;">Credit: <a href="https://gregwattonville.github.io/chaos-game-2d/">Greg Wattonville</a></h1>
+
+    <section class="next-section" id="triangle" style="margin-bottom: 3em;">
+    	<div class="container-fluid pt-3">
+    		<div class="row">
+  		  	<div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-3 offset-lg-1">
+  		  		<h3 class="text-center">Triangle</h3>
+  		  		<hr>
+  		  		<p class="text-center">Click in the triangle to start</p>
+
+  		  		<div class="form-group row">
+  					  <label for="epochs-number-input" class="col-2 col-form-label">Epochs</label>
+  						<div class="col-8 offset-1">
+  						  <input class="form-control" type="number" value="1000" id="js-input-triangle-epochs">
+  						</div>
+  					</div>
+
+  				<table class="table table-bordered">
+  				  <thead>
+  				    <tr class="table-active">
+  				      <th class="text-center">X</th>
+  				      <th class="text-center">Y</th>
+  				    </tr>
+  				  </thead>
+  				  <tbody>
+  				    <tr>
+  				      <td><input id="js-input-triangle-x0" class="form-control" type="number" value="100" min="0" max="800" step="1"></td>
+  				      <td><input id="js-input-triangle-y0" class="form-control" type="number" value="400" min="0" max="600" step="1"></td>
+  				    </tr>
+  				    <tr>
+  				      <td><input id="js-input-triangle-x1" class="form-control" type="number" value="400" min="0" max="800" step="1"></td>
+  				      <td><input id="js-input-triangle-y1" class="form-control" type="number" value="100" min="0" max="600" step="1"></td>
+  				    </tr>
+  				    <tr>
+  				      <td><input id="js-input-triangle-x2" class="form-control" type="number" value="700" min="0" max="800" step="1"></td>
+  				      <td><input id="js-input-triangle-y2" class="form-control" type="number" value="400" min="0" max="600" step="1"></td>
+  				    </tr>
+  				  </tbody>
+  				</table>
+          <p class="text-center">
+            <button id="js-btn-drawTriangle" type="button" class="btn btn-primary" style="margin-bottom: 1.5em">Draw</button>
+          </p>
+
+  		  </div> <!-- END col -->
+
+  		  	<div class="col-lg-7">
+      			<canvas class="canvas-border" id="js-canvas-triangle" width="800" height="600" style="display: block; margin: 0 auto;"></canvas>
+  		  	</div> <!-- END col-->
+
+  	  	</div> <!-- END Row -->
+  	 </div><!-- END Container -->
+    </section>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="scripts/vendor/rAF.js"></script>
+    <script src="scripts/polygon.js"></script>
+    <script src="scripts/polygon-animation.js"></script>
+
+  </body>
+</html>
