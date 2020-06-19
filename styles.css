@@ -1,0 +1,39 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: #333;
+}
+
+footer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color:white;
+  background-color:rgb(46, 45, 44);
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.canvas-border {
+  border: 2px solid #333;
+}
+
+.next-section {
+  margin-bottom: 75px;
+}
+
+.fa-2 {
+  font-size: 2em;
+}
+
+.github-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  color: #9d9d9d;
+  text-decoration: none;
+}
+
+.github-link img {
+  width: 22px;
+}
